@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog logicalFilePath="master"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet id="init table" author="eremenko">
+        <createTable tableName="kafkarecords">
+            <column name="id" type="bigserial"/>
+            <column name="create_date" type="timestamp"/>
+            <column name="catch_date" type="timestamp"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
