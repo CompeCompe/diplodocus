@@ -1,8 +1,6 @@
 package eremenko.diplodocus.entity
 
 import lombok.Data
-import lombok.NoArgsConstructor
-import java.time.Instant
 import java.time.LocalDateTime
 import javax.persistence.Column
 import javax.persistence.Entity
@@ -10,6 +8,7 @@ import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
 import javax.persistence.Table
+
 
 @Data
 @Table(name = "kafkaRecords")
@@ -21,5 +20,7 @@ data class KafkaRecord(
     @Column(name = "create_date")
     var createDate: LocalDateTime,
     @Column(name = "catch_date")
-    var catchDate: LocalDateTime
+    var catchDate: LocalDateTime,
+    @Column(name = "message")
+    var message: String
 )

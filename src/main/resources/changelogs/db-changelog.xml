@@ -8,6 +8,7 @@
             <column name="id" type="bigserial"/>
             <column name="create_date" type="timestamp"/>
             <column name="catch_date" type="timestamp"/>
+            <column name="message" type="text"/>
         </createTable>
     </changeSet>
 
