@@ -11,12 +11,12 @@ import javax.persistence.Table
 
 
 @Data
-@Table(name = "kafkaRecords")
+@Table(name = "kafkarecords")
 @Entity
 data class KafkaRecord(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long,
+    var id: Long = 0,
     @Column(name = "create_date")
     var createDate: LocalDateTime,
     @Column(name = "catch_date")
