@@ -1,4 +1,4 @@
-package eremenko.diplodocus.repos
+package eremenko.diplodocus.repos.kafka
 
 import eremenko.diplodocus.entity.KafkaRecord
 import org.springframework.data.jpa.repository.JpaRepository

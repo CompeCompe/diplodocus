@@ -1,4 +1,4 @@
-package eremenko.diplodocus.service
+package eremenko.diplodocus.service.kafka
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import eremenko.diplodocus.constansts.KafkaConsts
